@@ -17,13 +17,18 @@ This repository contains a production-ready toolset for analyzing MITRE ATT&CK c
 
 ## Setup
 1. **Authentication**: Ensure you have [Application Default Credentials (ADC)](https://cloud.google.com/docs/authentication/provide-credentials-adc) configured.
-2. **Environment**: Create a virtual environment and install dependencies:
+2. **Environment Variables**: Configure your tenant details. You can do this by exporting them or creating a `.env` file (not checked into git):
+   ```bash
+   export CHRONICLE_PROJECT_ID="your-project-id"
+   export CHRONICLE_INSTANCE_ID="your-instance-guid"
+   export CHRONICLE_LOCATION="us"
+   ```
+3. **Dependencies**: Create a virtual environment and install dependencies:
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    pip install google-auth requests
    ```
-3. **Configuration**: Update the `PROJECT_ID`, `LOCATION`, and `INSTANCE_ID` in the scripts or `strategic_gap_analyzer.py`.
 
 ## Usage
 Run the end-to-end analysis:
@@ -36,5 +41,3 @@ Run the end-to-end analysis:
 
 ## Methodology: The Contextual Coverage Formula
 $$Coverage\_Score = \frac{\sum (Techniques \times Risk\_Relevance) + Resilience\_Bonus}{\text{Total Relevant Techniques}}$$
-
-This tool helps you transition from "Checking a Box" to building a defensible, threat-informed security posture.
