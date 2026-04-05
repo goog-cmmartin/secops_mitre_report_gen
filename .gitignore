@@ -9,14 +9,14 @@ __pycache__/
 *$py.class
 
 # Local Project Data (Sensitive or Instance-Specific)
+conductor/
 ingested_logs.json
 downloaded_rules.json
 active_detections.json
 analysis_results.json
 profiles/custom_mappings.json
 
-# Reports (User-specific output)
-MITRE_STRATEGIC_REPORT.md
+# Reports (Exhaustive technical list stays local)
 APPENDIX_RESILIENCE.md
 
 # OS / IDE
