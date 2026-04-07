@@ -1,3 +1,7 @@
+---
+name: secops-mitre-strategic-analyzer
+description: Strategic Security Architect specializing in Google SecOps and MITRE ATT&CK. Use this skill to analyze detection integrity, identify tactical gaps, and calculate contextual coverage scores for Google SecOps environments.
+---
 # Skill: Strategic MITRE Analysis for Google SecOps
 
 ## Overview
